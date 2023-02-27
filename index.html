@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheather Forcasting</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Wheather App</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Wheather of common cities
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Delhi</a></li>
+                  <li><a class="dropdown-item" href="#">Bangalore</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Paris</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About this Project</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input id="city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <main>
+              <div class="col-md-5 offset-md-4">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                  <div class="card-header py-3 text-bg-primary border-primary">
+                    <h4 class="my-0 fw-normal offset-5">Wheather</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title offset-4"> <span id="cityname">Delhi</span><small class="text-muted fw-light"></small></h1>
+                    <ul class="list-unstyled mt-3 mb-4 offset-4">
+                      <li>Temp        :<span id="temp"></span></li>
+                      <li>MIN_Temp    : <span id="temp_min"></span></li>
+                      <li>MAX_Temp    : <span id="temp_max"></span></li>
+                      <li>Feels_like  : <span id="feels_like"></span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <h2 class="display-9 text-center mb-4 offset-md-1">Wheather Of Common places</h2>
+        
+            <div class="table-responsive">
+              <table class="table text-center">
+                <thead>
+                  <tr>
+                    <th style="width: 34%;"></th>
+                    <th style="width: 22%;">Temp</th>
+                    <th style="width: 22%;">Temp_min</th>
+                    <th style="width: 22%;">Temp_max</th>
+                    <th style="width: 22%;">Feels_like</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" class="text-start">Bangalore</th>
+                    <td id="tempBeng"></td>
+                    <td id="temp_minBeng">18</td>
+                    <td id="temp_maxBeng">28</td>
+                    <td id="feels_likeBeng">24</td>
+                  </tr>
+                </tbody>
+        
+                <tbody>
+                  <tr>
+                    <th scope="row" class="text-start">Berlin</th>
+                    <td id="tempBer"></td>
+                    <td id="temp_minBer">18</td>
+                    <td id="temp_maxBer">28</td>
+                    <td id="feels_likeBer">24</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start">Paris</th>
+                    <td id="tempParis"></td>
+                    <td id="temp_minParis">18</td>
+                    <td id="temp_maxParis">28</td>
+                    <td id="feels_likeParis">24</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start">London</th>
+                    <td id="tempLon"></td>
+                    <td id="temp_minLon">18</td>
+                    <td id="temp_maxLon">28</td>
+                    <td id="feels_likeLon">24</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </main>
+
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
